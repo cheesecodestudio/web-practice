@@ -1,0 +1,140 @@
+body {
+    color: #010101;
+    display: grid;
+    grid-template: 20% auto 10% / 25% 25% 25% 25%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18pt;
+}
+
+header {
+    background-color: #0575E0;
+    color: #FDFDFD;
+    grid-column: 1/5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+.font-yellow {
+    color: #fffb14
+}
+
+nav {
+    background-color: #323232;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+nav a {
+    width: 100%;
+    padding: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    color: #FDFDFD;
+    text-decoration: none;
+    font-size: 20pt;
+    border: #010101 1px solid;
+}
+
+nav a:hover {
+    background-color: #FDFDFD;
+    color: #010101;
+}
+
+main {
+    grid-column: 1/5;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 1rem;
+}
+
+.card {
+    border: #c1c1c1 1px solid;
+    margin: 0.5rem;
+    border-radius: 1rem;
+}
+
+.card h1 {
+    font-size: 18pt;
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+    height: fit-content;
+    background-color: #0575E0;
+    color: #FDFDFD;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card h2 {
+    margin: 0;
+    text-align: center;
+    border-bottom: #c1c1c1 4px solid;
+    height: fit-content;
+    margin: 0 10%;
+    padding: 0.5rem 0;
+}
+
+.card>div {
+    padding: 2rem;
+    display: flex;
+    height: fit-content;
+    gap: 1.5rem;
+}
+
+.card>div>img {
+    flex-grow: 1;
+    width: 30%;
+    height: 30%;
+}
+
+.card>div>figure {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem 0;
+}
+.card>div>figure>figcaption {
+    text-align: center;
+    padding-top: 1rem;
+    font-style: italic;
+}
+
+.card>div>figure>img {
+    width: 100%;
+}
+
+.card>div>p {
+    flex-grow: 2;
+    margin: 0;
+    line-height: 150%;
+}
+
+.card > ul {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+footer {
+    background-color: #0575E0;
+    color: #FDFDFD;
+    grid-column: 1/5;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h3, footer > p {
+    margin: 0;
+}
